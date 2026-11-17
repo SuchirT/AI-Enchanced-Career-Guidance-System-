@@ -2834,7 +2834,7 @@ footer h3{
         button.setAttribute("aria-pressed","false");
       }else{
         set.add(label);
-        answers[label]=answers[label]||{};
+        answers[label]=answers[label]||(set===selectedInterests?[]:{});
         button.classList.add("active");
         button.setAttribute("aria-pressed","true");
       }
